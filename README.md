@@ -47,8 +47,8 @@ module.exports = class App extends React.Component
                         t.text user.userName
                         t.$ SideNav
 
-                t.main {className: 'container'}, t ->
-                    t.div {className: 'row'}, t ->
+                t.main {className: 'container'}, (t) ->
+                    t.div {className: 'row'}, (t) ->
                         t.$ router.RouteHandler, props
 
                 t.footer null
