@@ -1,0 +1,23 @@
+{
+  "name": "react-fsx",
+  "version": "1.0.0-pre",
+  "description": "Function based JSX",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mgutz/react-fsx"
+  },
+  "keywords": [
+    "react",
+    "jsx"
+  ],
+  "author": "Mario Gutierrez <mario@mgutz.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mgutz/react-fsx/issues"
+  },
+  "homepage": "https://github.com/mgutz/react-fsx"
+}
