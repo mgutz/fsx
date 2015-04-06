@@ -6,7 +6,7 @@ Function based JSX.
 
 Use plain JavaScript inside render.
 
-```es6
+```javascript
 import {fsx} from 'react-fsx'
 
 export default class App extends React.Component {
