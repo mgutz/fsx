@@ -35,7 +35,7 @@ export default class App extends React.Component {
 
 CoffeeScript
 
-```coffescript
+```coffeescript
 module.exports = class App extends React.Component
     render: ->
         user = @state.user
