@@ -31,7 +31,7 @@ function Fsx() {
 var root = Fsx.prototype;
 
 /**
- * Use render child components.
+ * Use to render child components.
  */
 root.$ = function(component, props, inner) {
     var el = React.createFactory(component);
@@ -45,13 +45,6 @@ root.$ = function(component, props, inner) {
 root.text = function(str) {
   return this.scope.push(str);
 };
-
-var i, tag;
-for (i = 0; i < tags.length; i++) {
-    if (!tags.hasOwnProperty(i)) continue;
-    tag = tags[i];
-    createElement(Fsx.prototype, tag);
-}
 
 elementFn = function(el) {
     return function(props, inner) {
@@ -78,6 +71,10 @@ createElement = function(root, tag) {
     var el = React.createFactory(tag);
     root[tag] = elementFn(el);
 };
+
+for (var i = 0; i < tags.length; i++) {
+    createElement(Fsx.prototype, tags[i]);
+}
 
 
 module.exports = function fsx(inner) {
