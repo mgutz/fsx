@@ -1,6 +1,6 @@
 {
   "name": "react-fsx",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Function based JSX",
   "main": "index.js",
   "scripts": {
